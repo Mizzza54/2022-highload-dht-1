@@ -27,7 +27,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class ServiceImpl implements Service {
     private static final String INVALID_ID_MESSAGE = "Invalid id";
-    private static final int FLUSH_THRESHOLD_BYTES = 4096;
+    private static final int FLUSH_THRESHOLD_BYTES = 4194304;
 
     private HttpServer httpServer;
     private Dao<MemorySegment, Entry<MemorySegment>> dao;
